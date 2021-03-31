@@ -1,0 +1,56 @@
+Building with makeflags  --no-print-directory -rl 32 -- WRAPPER_UOFTECE2442018F=done
+In build mode debug
+g++ -c  '/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp' -o  ../build/OBJ/debug/galaxy-explorer/AsteroidList.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -ggdb   
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:9:45: warning: unused parameter ‘a’ [-Wunused-parameter]
+ AsteroidListItem::AsteroidListItem(Asteroid a) {
+                                             ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:21:48: warning: unused parameter ‘src’ [-Wunused-parameter]
+ AsteroidList::AsteroidList(const AsteroidList& src)
+                                                ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:32:39: warning: unused parameter ‘e’ [-Wunused-parameter]
+ void AsteroidList::pushFront(Asteroid e) {
+                                       ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:83:63: warning: unused parameter ‘prev’ [-Wunused-parameter]
+ AsteroidListItem* AsteroidList::insertAfter(AsteroidListItem* prev, Asteroid e) {
+                                                               ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:83:78: warning: unused parameter ‘e’ [-Wunused-parameter]
+ AsteroidListItem* AsteroidList::insertAfter(AsteroidListItem* prev, Asteroid e) {
+                                                                              ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:87:63: warning: unused parameter ‘prev’ [-Wunused-parameter]
+ AsteroidListItem* AsteroidList::insertAfter(AsteroidListItem* prev, const AsteroidList& others) {
+                                                               ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:87:89: warning: unused parameter ‘others’ [-Wunused-parameter]
+ AsteroidListItem* AsteroidList::insertAfter(AsteroidListItem* prev, const AsteroidList& others) {
+                                                                                         ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:91:62: warning: unused parameter ‘prev’ [-Wunused-parameter]
+ AsteroidListItem* AsteroidList::eraseAfter(AsteroidListItem* prev) {
+                                                              ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidList.cpp:98:59: warning: unused parameter ‘src’ [-Wunused-parameter]
+ AsteroidList& AsteroidList::operator=(const AsteroidList& src) {
+                                                           ^
+g++ -c  '/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidsObserver.cpp' -o  ../build/OBJ/debug/galaxy-explorer/AsteroidsObserver.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -ggdb   
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidsObserver.cpp:9:52: warning: unused parameter ‘asteroid’ [-Wunused-parameter]
+ void AsteroidsObserver::onAsteroidInRange(Asteroid asteroid) {
+                                                    ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidsObserver.cpp:12:51: warning: unused parameter ‘asteroid’ [-Wunused-parameter]
+ void AsteroidsObserver::onAsteroidUpdate(Asteroid asteroid) {
+                                                   ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidsObserver.cpp:15:55: warning: unused parameter ‘asteroid’ [-Wunused-parameter]
+ void AsteroidsObserver::onAsteroidOutOfRange(Asteroid asteroid) {
+                                                       ^
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/AsteroidsObserver.cpp:18:52: warning: unused parameter ‘asteroid’ [-Wunused-parameter]
+ void AsteroidsObserver::onAsteroidDestroy(Asteroid asteroid) {
+                                                    ^
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/galaxy_explorer.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_drawing.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_master.o
+g++ -c  '/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/GameAI.cpp' -o  ../build/OBJ/debug/galaxy-explorer/GameAI.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -ggdb   
+/u/c/hashmim7/ece244/lab4/galaxy-explorer/src/galaxy-explorer/GameAI.cpp:21:56: warning: unused parameter ‘ship_state’ [-Wunused-parameter]
+ SuggestedAction GameAI::suggestAction(const ShipState& ship_state) {
+                                                        ^
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/galaxy_explorer_main.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_main.o
+'g++' ../build/OBJ/debug/galaxy-explorer/AsteroidList.o ../build/OBJ/debug/galaxy-explorer/AsteroidsObserver.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/debug/galaxy-explorer/GameAI.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_main.o -o '../build/EXE/debug/galaxy-explorer' -L/share/copy/ece244f/SFML-2.4.2/lib -L/lib64 -lsfml-audio-s -lsfml-network-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -l:libudev.so.0 -lXrandr -lpthread -lrt -lGL -lSM -lICE -lX11 -lXext -lfreetype -ljpeg -l:libFLAC.so.8 -lvorbis -lvorbisenc -logg -lvorbisfile -std=c++14 -Wall -Wextra -pedantic -ggdb   
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/common/testing_default_main.o ../build/OBJ/debug/common/testing_default_main.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/testing/asteroid_list_test_public.o ../build/OBJ/debug/galaxy-explorer/testing/asteroid_list_test_public.o
+cp /share/copy/ece244f/lab4/src/../build/OBJ/debug/galaxy-explorer/testing/galaxy_explorer_test_public.o ../build/OBJ/debug/galaxy-explorer/testing/galaxy_explorer_test_public.o
+'g++' ../build/OBJ/debug/common/testing_default_main.o ../build/OBJ/debug/galaxy-explorer/testing/asteroid_list_test_public.o ../build/OBJ/debug/galaxy-explorer/testing/galaxy_explorer_test_public.o ../build/OBJ/debug/galaxy-explorer/AsteroidList.o ../build/OBJ/debug/galaxy-explorer/AsteroidsObserver.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_drawing.o ../build/OBJ/debug/galaxy-explorer/galaxy_explorer_master.o ../build/OBJ/debug/galaxy-explorer/GameAI.o -o '../build/EXE/debug/test_galaxy-explorer' -L/share/copy/ece244f/SFML-2.4.2/lib -L/lib64 -lsfml-audio-s -lsfml-network-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -l:libudev.so.0 -lXrandr -lpthread -lrt -lGL -lSM -lICE -lX11 -lXext -lfreetype -ljpeg -l:libFLAC.so.8 -lvorbis -lvorbisenc -logg -lvorbisfile -std=c++14 -Wall -Wextra -pedantic -ggdb   

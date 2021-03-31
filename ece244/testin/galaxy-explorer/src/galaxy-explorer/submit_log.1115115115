@@ -1,0 +1,25 @@
+Submitting assignment 4 from p143.ecf.utoronto.ca
+Checking for the expected files in the current directory
+AsteroidList.cpp MyAIData.hpp AsteroidsObserver.cpp GameAI.cpp
+Attempting to build your code.  Make output follows:
+==================================================================
+mkdir -p src/galaxy-explorer
+cp exercise.make src/Makefile
+cp *.hpp src/galaxy-explorer
+cp *.cpp src/galaxy-explorer
+make -C src BUILD_MODE=release
+make[1]: Entering directory `/tmp/7wI8IJcDXv/src'
+Building with makeflags  --no-print-directory -rl 8 -- WRAPPER_UOFTECE2442018F=done BUILD_MODE=release
+In build mode release
+g++ -c  '/tmp/7wI8IJcDXv/src/galaxy-explorer/AsteroidList.cpp' -o  ../build/OBJ/release/galaxy-explorer/AsteroidList.o -I . -I /share/copy/ece244f/lab4/src/ -isystem /share/copy/ece244f/SFML-2.4.2/include -std=c++14 -Wall -Wextra -pedantic -O3 -flto -D NDEBUG  
+make[1]: Leaving directory `/tmp/7wI8IJcDXv/src'
+------------------------------------------------------------------
+The build appears to have failed.  See the make output for
+more information about the details of the error.
+------------------------------------------------------------------
+This assignment did not compile.
+It will not receive any functionality marks but will still be marked for style.
+Do want to submit anyways? (y/n): n
+
+No files were submitted
+
